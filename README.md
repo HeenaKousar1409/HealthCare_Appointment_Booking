@@ -3,7 +3,6 @@ For REST API we need to download Postman Application to test the code while ente
 
 1.User Management
 
-
     i.Sign Up :                                         
     url: http://localhost:8080/api/auth/signup          
     method: post                                           
