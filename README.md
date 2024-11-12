@@ -1,6 +1,10 @@
 For REST API we need to download Postman Application to test the code while entering API Endpoints(Postman Collection)
+
+
 1.User Management
-   i.Sign Up :                                         
+
+
+    i.Sign Up :                                         
     url: http://localhost:8080/api/auth/signup          
     method: post                                           
     Body>raw>json :{                                       
@@ -32,7 +36,9 @@ iii.Update Profile :
 }
 Response: Profile updated successfully
 
+
 2. Doctor Management
+   
    
    i.Doctor Registration :
    
@@ -63,7 +69,9 @@ Response : [
 ]
 
 
+
 3.Appointment Booking
+
 
       i.Create Appointment
       
@@ -122,6 +130,8 @@ Response: {
        If the user is not the one who booked the appointment: "You can only cancel your own appointments"
        If the appointment is within 24 hours: "Appointment cannot be canceled within 24 hours of the scheduled time"
        If the appointment doesn’t exist: "Appointment not found"
+
+
        
 In Additional for Database MySQL Workbench
 spring.datasource.url=jdbc:mysql://localhost:3306/healthcare_appointment
