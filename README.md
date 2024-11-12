@@ -1,6 +1,6 @@
 For REST API we need to download Postman Application to test the code while entering API Endpoints(Postman Collection)
 1.User Management
-i.Sign Up :                                         
+   i.Sign Up :                                         
     url: http://localhost:8080/api/auth/signup          
     method: post                                           
     Body>raw>json :{                                       
@@ -13,7 +13,7 @@ Response:User registered successfully
 if we try again signup with same email we will get
 Error: Email already registered
 
-ii.Login :
+   ii.Login :
     url: http://localhost:8080/api/auth/login
     method: post                                         
     Body>raw>json :{ 
@@ -33,7 +33,9 @@ iii.Update Profile :
 Response: Profile updated successfully
 
 2. Doctor Management
+   
    i.Doctor Registration :
+   
          url: http://localhost:8080/api/doctors/register?availability=Full-Time&experience=2&name=Dr.y&specialization=ccc
          method: post
 Response:Doctor registered successfully with ID: 4
@@ -41,6 +43,7 @@ If we try to register with same doctorname we will get
 Error: Doctor with this name already exists. doctor name should be unique.
 
 ii.Fetch Doctor List :
+
 url:http://localhost:8080/api/doctors/specialization?specialization=Cardiology
 url:http://localhost:8080/api/doctors/list
 method: Get
@@ -59,8 +62,11 @@ Response : [
     }
 ]
 
+
 3.Appointment Booking
+
       i.Create Appointment
+      
           url:http://localhost:8080/api/appointments/book
           method:Post
           Body>raw>json: {
@@ -78,6 +84,7 @@ Response: {
 }
 
      ii.View Appointment
+
          url:http://localhost:8080/api/appointments/user/1
          method:Get
          Content-Type: application/json
@@ -105,7 +112,9 @@ Response: {
    If there is an error (e.g., invalid userId), you can expect a 400 or 404 error with a relevant message : {"error": "User not found" }
 
    iii.Cancel Appointment
-       url:http://localhost:8080/api/appointments/cancel/{appointmentId}/{userId}  ---Replace {appointmentId} with the ID of the appointment you want to cancel, and {userId} with the ID of the user who booked the appointment
+   
+       url:http://localhost:8080/api/appointments/cancel/{appointmentId}/{userId} 
+       Replace {appointmentId} with the ID of the appointment you want to cancel, and {userId} with the ID of the user who booked the appointment
        method:Delete
        After sending the request, you should receive a response like: Success (200 OK):
        Response : "Appointment canceled successfully"
