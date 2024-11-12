@@ -17,6 +17,8 @@ Response:User registered successfully
 if we try again signup with same email we will get
 Error: Email already registered
 
+
+
    ii.Login :
     url: http://localhost:8080/api/auth/login
     method: post                                         
