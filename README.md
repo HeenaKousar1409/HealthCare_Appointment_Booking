@@ -1,7 +1,24 @@
-For REST API we need to download Postman Application to test the code while entering API Endpoints(Postman Collection)
+# Healthcare Appointment Booking System
 
+This is a RESTful API for managing healthcare appointments, including user management, doctor management, and appointment booking. This API can be tested using the Postman application by importing the provided Postman collection.
+
+## Table of Contents
+1. [User Management](#user-management)
+   - Sign Up
+   - Login
+   - Update Profile
+2. [Doctor Management](#doctor-management)
+   - Doctor Registration
+   - Fetch Doctor List
+3. [Appointment Booking](#appointment-booking)
+   - Create Appointment
+   - View Appointment
+   - Cancel Appointment
+4. [Database Configuration](#database-configuration)
+5. [Postman Collection](#postman-collection)
 
 1.User Management
+
     i.Sign Up :                                         
     url: http://localhost:8080/api/auth/signup          
     method: post                                           
@@ -122,5 +139,12 @@ Database Configuration for MySQL Workbench
 spring.datasource.url=jdbc:mysql://localhost:3306/healthcare_appointment
 spring.datasource.username=root
 spring.datasource.password=root
+
+### Key Features:
+1. **User Management**: Endpoints for user sign-up, login, and profile updates.
+2. **Doctor Management**: Includes doctor registration and fetching doctor lists.
+3. **Appointment Booking**: Endpoints to create, view, and cancel appointments.
+4. **Database Configuration**: MySQL setup details.
+5. **Postman Collection**: Instructions on how to import and use the Postman collection for API testing.
 
 
